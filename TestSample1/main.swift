@@ -36,5 +36,6 @@ public func solution(_ a: inout [Int]) -> Int {
     return -1
 }
 
-var A = [-1,-2,0]
+// Try any integer between + or 1 1 million
+var A = [-1, -2, 0, 1, 2, 999999, 3]
 print(solution(&A))
