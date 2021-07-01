@@ -39,3 +39,11 @@ public func solution(_ a: inout [Int]) -> Int {
 // Try any integer between + or 1 1 million
 var A = [-1, -2, 0, 1, 2, 999999, 3]
 print(solution(&A))
+
+// Or, good for performance testing
+func makeList(_ n: Int) -> [Int] {
+    return (0..<n).map { _ in .random(in: -1000000...1000000) }
+}
+
+var b = makeList(200000)
+print(solution(&b))
